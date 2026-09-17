@@ -10,3 +10,9 @@
   - Commits all staged changes.
 - git push
   - Pushes all new commits to the remote repository.
+- git fetch
+  - Fetches admin info, such as what has changed. Does not pull code.
+- git pull
+  - Pulls down the latest version of the code from the remote repository.
+- git status
+  - Tells you what is different after running git fetch.
