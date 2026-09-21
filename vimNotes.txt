@@ -1,0 +1,57 @@
+Class Notes For Vim
+
+Modes
+   i     - Insert Mode
+   v     - Visual Mode
+   <esc> - Normal Mode
+
+General Use:
+   File Management:
+      :w  - Save file
+      :q  - Quit Vim
+      :q! - Quit without saving
+
+   Navigation:
+      gg - Jump to start of the first line.
+      G  - Jump to the start of the last line.
+
+      <number> + gg - Jumps to <number> lines from the top.
+      <number> + G  - Jumps to <number> lines from the bottom. 
+      :<number>     - Jumps to line <number>.
+      
+      w  - Jump to start of next word including punctuation.
+      b  - Jump to start of last word including punctuation.
+      e  - Jump to the end of the next word including punctuation.
+
+      W  - Jump to start of next word ignoring punctuation.
+      B  - Jump to start of last word ignoring punctuation.
+      E  - Jump to end of next word ignoring punctuation.
+
+      $  - Jump to the end of the current line while staying in normal mode.
+
+      /<pattern> - Jumps to first occurance of <pattern> (case sensitive)
+      ?<pattern> - Jumps to last occurance of <pattern>  (case sensitive)
+      n          - Jumps to next occurance of <pattern>
+      N          - Jumps to previous occurance of <pattern>
+
+      H - Jump to start of the current or previous paragraph.
+      L - Jump to end of the current paragraph.
+
+   General Editing:
+      u          - Undo last action
+      <ctrl> + r - Redo last undo
+
+      i           - Enter insert mode before cursor.
+      a           - Enter insert mode after cursor.
+      <shift> + a - Enter insert mode at end of current line
+      <shift> + i - Enter insert mode at start of current line
+
+   Deletion:
+      dw - Deletes from the cursor to the start of the next word.
+      db - Deletes from the cursor to the end of the current word.
+      dd - Deletes the current line.
+
+   Copying and Pasting:
+      y - Yank the selected text while in visual mode.
+      p - Paste the yanked text while in normal mode.
+
