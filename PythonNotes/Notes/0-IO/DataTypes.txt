@@ -1,0 +1,27 @@
+Primitive Data Types: Do not have member functions
+	Boolean: True or False
+	int: Whole number
+	float: 32 bit decimal
+	double: 64 bit decimal
+	char: single character
+
+Non-Primitive Data Types: These do have member functions
+	String: a list of chars
+	List: an array of items
+	Dictionary: A map between key-value pairs
+
+Assignment Operators
+	<variable> += <number> : Increments the variable by the number.
+	<variable> -= <number> : Decrements the variable by the number.
+	<variable> *= <number> : Multiplies the variable by the number.
+	
+String Methods
+	<stringVar>.title() : Converts the string to TitleCase
+
+Type Identification
+	print(type(<variable>)) : Outputs the type of the variable.
+	print(type(5): Outputs "<class 'int'>".
+	print(type(3.0): Outputs "<class 'float'>".
+	print(type("3"): Outputs "<class 'str'>".
+	print(type('3'): Outputs "<class 'str'>".
+	print(type(True): Outputs "<class 'bool'>".

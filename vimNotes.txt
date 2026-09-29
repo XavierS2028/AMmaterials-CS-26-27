@@ -3,6 +3,7 @@ Class Notes For Vim
 Modes
    i     - Insert Mode
    v     - Visual Mode
+	R     - Replace Mode
    <esc> - Normal Mode
 
 General Use:
@@ -43,15 +44,27 @@ General Use:
 
       i           - Enter insert mode before cursor.
       a           - Enter insert mode after cursor.
+		o           - Enter insert mode in a new line below the cursor.
+		O           - Enter insert mode in a new line above the cursor.
       <shift> + a - Enter insert mode at end of current line
       <shift> + i - Enter insert mode at start of current line
+
+		x           - Delete one character after the cursor.
+		X           - Delete one character before the cursor.
+
+		>           - Tabs over selected lines while in visual mode.
+		<           - Decreases tab indent over selected lines while in visual mode.
 
    Deletion:
       dw - Deletes from the cursor to the start of the next word.
       db - Deletes from the cursor to the end of the current word.
       dd - Deletes the current line.
+		dG - Deletes everything from the current line to the end of the file.
+		<number> dd - Deletes the current line and <number> lines below the cursor.
 
    Copying and Pasting:
-      y - Yank the selected text while in visual mode.
-      p - Paste the yanked text while in normal mode.
-
+      y  - Yank the selected text while in visual mode.
+		yy - Yank the current line while in normal mode.
+		<number> yy - Yanks from the current line to <number> lines below the cursor.
+      p  - Paste the yanked text below the current line while in normal mode.
+		P  - Paste the yanked text above the current line while in normal mode.
