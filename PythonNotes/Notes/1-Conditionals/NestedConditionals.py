@@ -1,5 +1,4 @@
 #### Challenge 1 ####
-'''
 response1 = input("Did primary backup file generate? ")
 
 if response1 == "yes":
@@ -21,8 +20,8 @@ elif response1 == "no":
     else:
         print("Invalid Input")
 else:
-    print("Invalid Input")
-'''      
+    print("Invalid Input")   
+ 
 #### Challenge 2 ####
 role = input("Enter Role: 'student' or 'visitor' ")
 
@@ -67,7 +66,6 @@ else:
     print("Invalid Input")
 
 #### Challenge 3 ####
-'''
 didRestart = input("Did you restart the computer? ")
 
 if didRestart == "yes":
@@ -98,8 +96,89 @@ elif didRestart == "no":
         print("Invalid Input")
 else:
     print("Invalid Input")
-'''
+
 #### Challenge 4 ####
+isHissing = input("Do you hear a Creeper hissing? [yes/no] ")
+
+if isHissing == "yes":
+    hasBucket = input("Water bucket in your hotbar? [yes/no] ")
+
+    if hasBucket == "yes":
+        print("MLG water drop: absorb 100% of blast damage!")
+    elif hasBucket == "no":
+        dugDown = input("Did you dig straight down? [yes/no] ")
+
+        if dugDown == "yes":
+            print("Fell into lava. Diamonds gone! Player tried to swim in lava.")
+        elif dugDown == "no":
+            print("Shield up! Blown 20 blocks into a ravine.")
+        else:
+            print("Invalid Input")
+
+    else:
+        print("Invalid Input")
+
+elif isHissing == "no":
+    isHungry = input("Is your hunger bar totally empty? [yes/no] ")
+
+    if isHungry == "yes":
+        eatFlesh = input("Eat mystery rotten flesh? [yes/no]")
+        
+        if eatFlesh == "yes":
+            print("Hunger effect active, but you barely survived!")
+        elif eatFlesh == "no":
+            print("Starved to death while looking at a cow. Respawn screen!")
+        else:
+            print("Invalid Input")
+    elif isHungry == "no":
+        print("Build a 3x1 dirt pillar, crouch, and cry until dawn.")
+    else:
+        print("Invalid Input")
+
+else:
+    print("Invalid Input")
 
 #### Challenge 5 ####
+isClosed = input("Is the hallway bathroom closed for 'cleaning'? [yes/no] ")
 
+if isClosed == "yes":
+    canHold = input("Can you clench & hold for 15 min? [yes/no] ")
+
+    if canHold == "yes":
+        print("PENGUIN WADDLE: Lock core, slow robot stride to homeroom class!")
+    elif canHold == "no":
+        willRisk = input("Risk the creepy locker room? [yes/no] ")
+        
+        if willRisk == "yes":
+            print("DUNGEON RESTROOM: 0-ply paper & darkness. You survive!")
+        elif willRisk == "no":
+            print("NURSE VISIT: She gives you an ice pack & calls home. Game over!")
+        else:
+            print("Invalid Input")
+    else:
+        print("Invalid Input")
+elif isClosed == "no":
+    isPaper = input("Is there toilet paper in the stall? [yes/no] ")
+
+    if isPaper == "yes":
+        doorLocks = input("Does stall door lock? [yes/no] ")
+        
+        if doorLocks == "yes":
+            print("PURE RELIEF: Working lock & paper!")
+        elif doorLocks == "no":
+            print("HOLD W/ FOOT: Door swings; make awkward eye contact with others!")
+        else:
+            print("Invalid Input")
+    elif isPaper == "no":
+        spareTowels = input("Spare towels or pass? [yes/no] ")
+
+        if spareTowels == "yes":
+            print("CRISIS AVERTED: Tough 1-ply saved ya.")
+        elif spareTowels == "no":
+            print("AIRDROP: Text a pal to slide supplies under the door!")
+        else:
+            print("Invalid Input")
+    else:
+        print("Invalid Input")
+else:
+    print("Invalid Input")
