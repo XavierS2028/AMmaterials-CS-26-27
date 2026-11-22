@@ -67,6 +67,21 @@ def getRandomEmptySlot(board) -> list[int, int]:
 
     return [randomRow, randomCol]
 
+def counterOpeningMove(userToken: string, board) -> list[int, int]:
+    cornerCoords = [[0, 0], [0, 2], [2, 0], [2, 2]]
+    playerOpening = [0, 0]
+
+    for row in range(len(board)):
+        if userToken in board[row]:
+            playerOpening = [row, board[row].index(userToken)]
+
+    # If player opens in the center position
+    if playerOpening == [1, 1]:
+        bestMove = cornerCoords[random.randint(0, 3)]
+    else:
+        bestMove = [1, 1]
+
+    return bestMove
 
 # Returns a row, column location of the first almost-won stretch of the board
 # If no columns are almost-won, it will return the same best move that is passed in
@@ -112,22 +127,12 @@ def getStretchFinishPosition(tokenToMatch: string, outlierToken:string, board, b
     return bestMove
 
 def aiMove(board):
+    # First, find a random empty slot. Worst case scenario move
     bestMove = getRandomEmptySlot(gameBoard)
 
     # Counter opening move before moving to regular algorithm
     if playerTurns[0] == 1:
-        cornerCoords = [[0, 0], [0, 2], [2, 0], [2, 2]]
-        playerOpening = [0, 0]
-
-        for row in range(len(board)):
-            if playerToken in board[row]:
-                playerOpening = [row, board[row].index(playerToken)]
-
-        # If player opens in the center position
-        if playerOpening == [1, 1]:
-            bestMove = cornerCoords[random.randint(0, 3)]
-        else:
-            bestMove = [1, 1]
+        bestMove = counterOpeningMove(playerToken, gameBoard)
 
     # After countering the opening move, perform regular algorithm
     else:
