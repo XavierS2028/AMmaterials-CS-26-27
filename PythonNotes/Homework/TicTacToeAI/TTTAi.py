@@ -11,6 +11,8 @@ playerToken = "x"
 aiToken = "o"
 isPlayerTurn = True
 
+playerTurns = [0] # Needs to be a list because Python doesn't like ints for reasons
+
 # Functions
 def printBoard(board):
     for row in range(len(board)):
@@ -53,6 +55,7 @@ def userMove(symbol, board):
         col = int(input(f"Column: ")) - 1
 
     board[row][col] = symbol
+    playerTurns[0] += 1
 
 def getRandomEmptySlot(board) -> list[int, int]:
     randomRow = random.randint(0, len(board) - 1)
@@ -111,13 +114,30 @@ def getStretchFinishPosition(tokenToMatch: string, outlierToken:string, board, b
 def aiMove(board):
     bestMove = getRandomEmptySlot(gameBoard)
 
-    # Check Defensive Moves
-    # If a stretch is almost won, it's blocking move becomes the best move
-    bestMove = getStretchFinishPosition(playerToken, aiToken, gameBoard, bestMove)
+    # Counter opening move before moving to regular algorithm
+    if playerTurns[0] == 1:
+        cornerCoords = [[0, 0], [0, 2], [2, 0], [2, 2]]
+        playerOpening = [0, 0]
 
-    # Check For Offensive Moves
-    # If a winning offensive move exists, it becomes the best move
-    bestMove = getStretchFinishPosition(aiToken, playerToken, gameBoard, bestMove)
+        for row in range(len(board)):
+            if playerToken in board[row]:
+                playerOpening = [row, board[row].index(playerToken)]
+
+        # If player opens in the center position
+        if playerOpening == [1, 1]:
+            bestMove = cornerCoords[random.randint(0, 3)]
+        else:
+            bestMove = [1, 1]
+
+    # After countering the opening move, perform regular algorithm
+    else:
+        # Check Defensive Moves
+        # If a stretch is almost won, it's blocking move becomes the best move
+        bestMove = getStretchFinishPosition(playerToken, aiToken, gameBoard, bestMove)
+
+        # Check For Offensive Moves
+        # If a winning offensive move exists, it becomes the best move
+        bestMove = getStretchFinishPosition(aiToken, playerToken, gameBoard, bestMove)
 
     board[bestMove[0]][bestMove[1]] = aiToken
 
