@@ -1,0 +1,152 @@
+Species,Height_m,Weight_kg,Level,HP,Move1,Move2,Move3
+Bulbasaur,0.7,6.9,5,45,Tackle,Growl,Vine Whip
+Ivysaur,1.0,13.0,16,60,Vine Whip,Razor Leaf,Sleep Powder
+Venusaur,2.0,100.0,32,80,Razor Leaf,Solar Beam,Sludge Bomb
+Charmander,0.6,8.5,5,39,Scratch,Growl,Ember
+Charmeleon,1.1,19.0,16,58,Ember,Dragon Rage,Flamethrower
+Charizard,1.7,90.5,36,78,Flamethrower,Wing Attack,Fire Spin
+Squirtle,0.5,9.0,5,44,Tackle,Tail Whip,Water Gun
+Wartortle,1.0,22.5,16,59,Water Gun,Bite,Bubble Beam
+Blastoise,1.6,85.5,36,79,Hydro Pump,Skull Bash,Ice Beam
+Caterpie,0.3,2.9,3,45,Tackle,String Shot,Bug Bite
+Metapod,0.7,9.9,7,50,Harden,Tackle,String Shot
+Butterfree,1.1,32.0,10,60,Confusion,Gust,Sleep Powder
+Weedle,0.3,3.2,3,40,Poison Sting,String Shot,Bug Bite
+Kakuna,0.6,10.0,7,45,Harden,Poison Sting,String Shot
+Beedrill,1.0,29.5,10,65,Twineedle,Fury Attack,Pin Missile
+Pidgey,0.3,1.8,4,40,Tackle,Sand Attack,Gust
+Pidgeotto,1.1,30.0,18,63,Gust,Quick Attack,Wing Attack
+Pidgeot,1.5,39.5,36,83,Wing Attack,Hyper Beam,Agility
+Rattata,0.3,3.5,3,30,Tackle,Tail Whip,Quick Attack
+Raticate,0.7,18.5,20,55,Hyper Fang,Super Fang,Quick Attack
+Spearow,0.3,2.0,5,40,Peck,Growl,Fury Attack
+Fearow,1.2,38.0,20,65,Drill Peck,Mirror Move,Agility
+Ekans,2.0,6.9,8,35,Wrap,Poison Sting,Bite
+Arbok,3.5,65.0,22,60,Glare,Acid,Earthquake
+Pikachu,0.4,6.0,5,35,Thunder Shock,Quick Attack,Thunderbolt
+Raichu,0.8,30.0,28,60,Thunderbolt,Thunder,Body Slam
+Sandshrew,0.6,12.0,10,50,Scratch,Sand Attack,Slash
+Sandslash,1.0,29.5,22,75,Slash,Earthquake,Rock Slide
+Nidoran-F,0.4,7.0,6,55,Scratch,Growl,Double Kick
+Nidorina,0.8,20.0,16,70,Bite,Double Kick,Poison Sting
+Nidoqueen,1.3,60.0,34,90,Body Slam,Earthquake,Ice Beam
+Nidoran-M,0.5,9.0,6,46,Peck,Focus Energy,Double Kick
+Nidorino,0.9,19.5,16,61,Horn Attack,Double Kick,Poison Sting
+Nidoking,1.4,62.0,34,81,Thrash,Earthquake,Thunderbolt
+Clefairy,0.6,7.5,12,70,Pound,Sing,Metronome
+Clefable,1.3,40.0,30,95,Metronome,Body Slam,Psychic
+Vulpix,0.6,9.9,14,38,Ember,Quick Attack,Confuse Ray
+Ninetales,1.1,19.9,32,73,Flamethrower,Fire Spin,Confuse Ray
+Jigglypuff,0.5,5.5,10,115,Sing,Pound,Body Slam
+Wigglytuff,1.0,12.0,28,140,Body Slam,Double-Edge,Hyper Voice
+Zubat,0.8,7.5,8,40,Leech Life,Supersonic,Bite
+Golbat,1.6,55.0,22,75,Wing Attack,Confuse Ray,Bite
+Oddish,0.5,5.4,11,45,Absorb,Poison Powder,Acid
+Gloom,0.8,8.6,21,60,Acid,Petal Dance,Sleep Powder
+Vileplume,1.2,18.6,33,75,Petal Dance,Solar Beam,Sludge Bomb
+Paras,0.3,5.4,12,35,Scratch,Stun Spore,Leech Life
+Parasect,1.0,29.5,24,60,Spore,Slash,X-Scissor
+Venonat,1.0,30.0,14,60,Tackle,Confusion,Psybeam
+Venomoth,1.5,12.5,31,70,Psybeam,Psychic,Bug Buzz
+Diglett,0.2,0.8,15,10,Scratch,Dig,Slash
+Dugtrio,0.7,33.3,26,35,Earthquake,Slash,Rock Slide
+Meowth,0.4,4.2,13,40,Scratch,Bite,Pay Day
+Persian,1.0,32.0,28,65,Slash,Bite,Hyper Beam
+Psyduck,0.8,19.6,15,50,Scratch,Water Gun,Confusion
+Golduck,1.7,76.6,33,80,Hydro Pump,Psychic,Ice Beam
+Mankey,0.5,28.0,14,40,Scratch,Low Kick,Karate Chop
+Primeape,1.0,32.0,28,65,Cross Chop,Thrash,Rock Slide
+Growlithe,0.7,19.0,18,55,Bite,Ember,Take Down
+Arcanine,1.9,155.0,36,90,Flamethrower,Extreme Speed,Crunch
+Poliwag,0.6,12.4,12,40,Bubble,Hypnosis,Water Gun
+Poliwhirl,1.0,20.0,25,65,Bubble Beam,Body Slam,Hypnosis
+Poliwrath,1.3,54.0,38,90,Hydro Pump,Submission,Ice Punch
+Abra,0.9,19.5,12,25,Teleport,Confusion,Psybeam
+Kadabra,1.3,56.5,16,40,Psybeam,Recover,Psychic
+Alakazam,1.5,48.0,36,55,Psychic,Recover,Shadow Ball
+Machop,0.8,19.5,15,70,Low Kick,Karate Chop,Seismic Toss
+Machoke,1.5,70.5,28,80,Submission,Vital Throw,Rock Slide
+Machamp,1.6,130.0,38,90,Dynamic Punch,Earthquake,Cross Chop
+Bellsprout,0.7,4.0,12,50,Vine Whip,Wrap,Acid
+Weepinbell,1.0,6.4,21,65,Razor Leaf,Acid,Slam
+Victreebel,1.7,15.5,34,80,Razor Leaf,Solar Beam,Sludge Bomb
+Tentacool,0.9,45.5,16,40,Poison Sting,Supersonic,Water Pulse
+Tentacruel,1.6,55.0,30,80,Hydro Pump,Sludge Bomb,Ice Beam
+Geodude,0.4,20.0,14,40,Tackle,Rock Throw,Magnitude
+Graveler,1.0,105.0,25,55,Rock Slide,Earthquake,Self-Destruct
+Golem,1.4,300.0,38,80,Earthquake,Rock Slide,Explosion
+Ponyta,1.0,30.0,20,50,Ember,Stomp,Fire Spin
+Rapidash,1.7,95.0,40,65,Fire Blast,Bounce,Megahorn
+Slowpoke,1.2,36.0,18,90,Confusion,Water Gun,Headbutt
+Slowbro,1.6,78.5,37,95,Surf,Psychic,Ice Beam
+Magnemite,0.3,6.0,18,25,Thunder Shock,Sonic Boom,Spark
+Magneton,1.0,60.0,30,50,Thunderbolt,Tri Attack,Flash Cannon
+Farfetch'd,0.8,15.0,22,52,Peck,Slash,Air Cutter
+Doduo,1.4,39.2,20,35,Peck,Fury Attack,Tri Attack
+Dodrio,1.8,85.2,31,60,Drill Peck,Tri Attack,Agility
+Seel,1.1,90.0,22,65,Headbutt,Aurora Beam,Rest
+Dewgong,1.7,120.0,34,90,Ice Beam,Surf,Signal Beam
+Grimer,0.9,30.0,22,80,Pound,Sludge,Minimize
+Muk,1.2,30.0,38,105,Sludge Bomb,Gunk Shot,Shadow Sneak
+Shellder,0.3,4.0,20,30,Tackle,Clamp,Aurora Beam
+Cloyster,1.5,132.5,35,50,Ice Beam,Spike Cannon,Hydro Pump
+Gastly,1.3,0.1,18,30,Lick,Confuse Ray,Night Shade
+Haunter,1.6,0.1,25,45,Shadow Ball,Hypnosis,Dream Eater
+Gengar,1.5,40.5,38,60,Shadow Ball,Sludge Bomb,Thunderbolt
+Onix,8.8,210.0,22,35,Rock Throw,Bind,Earthquake
+Drowzee,1.0,32.4,20,60,Pound,Hypnosis,Confusion
+Hypno,1.6,75.6,26,85,Psychic,Hypnosis,Headbutt
+Krabby,0.4,6.5,18,30,Bubble,Vice Grip,Crabhammer
+Kingler,1.3,60.0,28,55,Crabhammer,Guillotine,Stomp
+Voltorb,0.5,10.4,20,40,Tackle,Spark,Self-Destruct
+Electrode,1.2,66.6,30,60,Thunderbolt,Explosion,Light Screen
+Exeggcute,0.4,2.5,22,60,Barrage,Confusion,Leech Seed
+Exeggutor,2.0,120.0,36,95,Psychic,Solar Beam,Egg Bomb
+Cubone,0.4,6.5,20,50,Bone Club,Headbutt,Bonemerang
+Marowak,1.0,45.0,28,60,Bonemerang,Earthquake,Rock Slide
+Hitmonlee,1.5,49.8,30,50,Double Kick,High Jump Kick,Mega Kick
+Hitmonchan,1.4,50.2,30,50,Fire Punch,Ice Punch,Thunder Punch
+Lickitung,1.2,65.5,25,90,Lick,Stomp,Slam
+Koffing,0.6,1.0,22,40,Tackle,Sludge,Smog
+Weezing,1.2,9.5,35,65,Sludge Bomb,Explosion,Flamethrower
+Rhyhorn,1.0,115.0,25,80,Horn Attack,Stomp,Rock Blast
+Rhydon,1.9,120.0,42,105,Earthquake,Megahorn,Rock Slide
+Chansey,1.1,34.6,30,250,Pound,Soft-Boiled,Egg Bomb
+Tangela,1.0,35.0,26,65,Vine Whip,Bind,Mega Drain
+Kangaskhan,2.2,80.0,32,105,Comet Punch,Bite,Mega Punch
+Horsea,0.4,8.0,18,30,Bubble,Smokescreen,Water Gun
+Seadra,1.2,25.0,32,55,Hydro Pump,Dragon Pulse,Ice Beam
+Goldeen,0.6,15.0,18,45,Peck,Horn Attack,Waterfall
+Seaking,1.3,39.0,33,80,Waterfall,Megahorn,Horn Drill
+Staryu,0.8,34.5,20,30,Tackle,Water Gun,Recover
+Starmie,1.1,80.0,35,60,Surf,Psychic,Thunderbolt
+Mr. Mime,1.3,54.5,28,40,Confusion,Psybeam,Magical Leaf
+Scyther,1.5,56.0,30,70,Quick Attack,Slash,X-Scissor
+Jynx,1.4,40.6,30,65,Ice Punch,Psychic,Lovely Kiss
+Electabuzz,1.1,30.0,32,65,Thunder Punch,Thunderbolt,Swift
+Magmar,1.3,44.5,32,65,Fire Punch,Flamethrower,Confuse Ray
+Pinsir,1.5,55.0,30,65,Vice Grip,Submission,X-Scissor
+Tauros,1.4,88.4,32,75,Tackle,Take Down,Earthquake
+Magikarp,0.9,10.0,5,20,Splash,Tackle,Flail
+Gyarados,6.5,235.0,20,95,Hydro Pump,Hyper Beam,Dragon Rage
+Lapras,2.5,220.0,35,130,Ice Beam,Surf,Thunderbolt
+Ditto,0.3,4.0,25,48,Transform,Struggle,Tackle
+Eevee,0.3,6.5,15,55,Tackle,Quick Attack,Bite
+Vaporeon,1.0,29.0,30,130,Surf,Aurora Beam,Acid Armor
+Jolteon,0.8,24.5,30,65,Thunderbolt,Pin Missile,Quick Attack
+Flareon,0.9,25.0,30,65,Flamethrower,Fire Spin,Bite
+Porygon,0.8,36.5,25,65,Tri Attack,Psybeam,Conversion
+Omanyte,0.4,7.5,25,35,Water Gun,Ancient Power,Rollout
+Omastar,1.0,35.0,40,70,Hydro Pump,Ancient Power,Ice Beam
+Kabuto,0.5,11.5,25,30,Scratch,Absorb,Aqua Jet
+Kabutops,1.3,40.5,40,60,Slash,Waterfall,Rock Slide
+Aerodactyl,1.8,59.0,35,80,Wing Attack,Ancient Power,Hyper Beam
+Snorlax,2.1,460.0,35,160,Body Slam,Rest,Hyper Beam
+Articuno,1.7,55.4,50,90,Ice Beam,Blizzard,Fly
+Zapdos,1.6,52.6,50,90,Thunderbolt,Thunder,Drill Peck
+Moltres,2.0,60.0,50,90,Flamethrower,Fire Blast,Sky Attack
+Dratini,1.8,3.3,15,41,Wrap,Dragon Rage,Thunder Wave
+Dragonair,4.0,16.5,30,61,Dragon Rage,Slam,Aqua Tail
+Dragonite,2.2,210.0,55,91,Hyper Beam,Outrage,Wing Attack
+Mewtwo,2.0,122.0,70,106,Psychic,Recover,Shadow Ball
+Mew,0.4,4.0,50,100,Psychic,Metronome,Transform
