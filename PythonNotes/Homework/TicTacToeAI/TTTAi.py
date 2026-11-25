@@ -7,13 +7,19 @@ gameBoard = [[" ", " ", " "],
              [" ", " ", " "], 
              [" ", " ", " "]]
 
+# Helper Location Lists
+#               Top L,  Top R,  Bot L,  Bot R
+boardCorners = [[0, 0], [0, 2], [2, 0], [2, 2]]
+#               Top,    Left,   Right,   Bottom
+boardEdges   = [[0, 1], [1, 0], [1, 2], [2, 1]]
+
 playerToken = "x"
 aiToken = "o"
 isPlayerTurn = True
 
 playerTurns = [0] # Needs to be a list because Python doesn't like ints for reasons
 
-# Functions
+# General Helper Functions
 def printBoard(board):
     for row in range(len(board)):
         print(f"\t", end="")
@@ -41,6 +47,7 @@ def isValidMove(row: int, col: int, board) -> bool:
     else:
         return False
 
+# User Helper Functions
 def userMove(symbol, board):
     print(f"It is {symbol}'s turn")
 
@@ -57,6 +64,8 @@ def userMove(symbol, board):
     board[row][col] = symbol
     playerTurns[0] += 1
 
+
+# Algorithm Helper Functions
 def getRandomEmptySlot(board) -> list[int, int]:
     randomRow = random.randint(0, len(board) - 1)
     randomCol = random.randint(0, len(board) - 1)
@@ -68,7 +77,6 @@ def getRandomEmptySlot(board) -> list[int, int]:
     return [randomRow, randomCol]
 
 def counterOpeningMove(userToken: string, board) -> list[int, int]:
-    cornerCoords = [[0, 0], [0, 2], [2, 0], [2, 2]]
     playerOpening = [0, 0]
 
     for row in range(len(board)):
@@ -77,9 +85,56 @@ def counterOpeningMove(userToken: string, board) -> list[int, int]:
 
     # If player opens in the center position
     if playerOpening == [1, 1]:
-        bestMove = cornerCoords[random.randint(0, 3)]
+        bestMove = boardCorners[random.randint(0, 3)]
     else:
         bestMove = [1, 1]
+
+    return bestMove
+
+def counterSecondMove(userToken: string, board, bestMove: list[int, int]) -> list[int, int]:
+    playerLocations = []
+
+    for row in range(len(board)):
+        for col in range(len(board[row])):
+            if board[row][col] == userToken:
+                playerLocations.append([row, col])
+
+    # If both of the player's moves are in the corners
+    if (playerLocations[0] in boardCorners) and (playerLocations[1] in boardCorners):
+        # If Opposite Corners (neither row nor column of the two match)
+        # If Adjacent Corners, just fall through and use the preexisting defense logic
+        if (not(playerLocations[0][1] == playerLocations[1][1])) and (not(playerLocations[0][0] == playerLocations[1][0])):
+            bestMove = boardEdges[random.randint(0, 3)]
+
+    # If both of the player's moves are in the edges
+    if (playerLocations[0] in boardEdges) and (playerLocations[0] in boardEdges):
+        # If the locations share either a row or a column, they must be opposite of each other
+        if (playerLocations[0][0] == playerLocations[1][0]) or (playerLocations[0][1] == playerLocations[1][1]):
+            openEdgeList = boardEdges
+            openEdgeList.remove(playerLocations[0]) 
+            openEdgeList.remove(playerLocations[1])
+
+            bestMove = openEdgeList[random.randint(0, 1)]
+
+        # If the locations are not opposite, the algorithm must go in the corner between the two
+        else:
+            # If the top is taken by the player
+            if (playerLocations[0] == boardEdges[0]) or (playerLocations[1] == boardEdges[0]):
+                # If left is taken
+                if (playerLocations[0] == boardEdges[1]) or (playerLocations[1] == boardEdges[1]):
+                    bestMove = boardCorners[0] # Top Left Corner
+                # If right is taken
+                else:
+                    bestMove = boardCorners[1] # Top Right Corner
+            # If the bottom is taken by the player
+            else:
+                # If left is taken
+                if (playerLocations[0] == boardEdges[1]) or (playerLocations[1] == boardEdges[1]):
+                    bestMove = boardCorners[2] # Bottom Left Corner
+                # If right is taken
+                else:
+                    bestMove = boardCorners[3] # Bottom Right Corner
+            
 
     return bestMove
 
@@ -134,6 +189,10 @@ def aiMove(board):
     if playerTurns[0] == 1:
         bestMove = counterOpeningMove(playerToken, gameBoard)
 
+    elif playerTurns[0] == 2:
+        bestMove = counterSecondMove(playerToken, gameBoard, bestMove)
+        bestMove = getStretchFinishPosition(playerToken, aiToken, gameBoard, bestMove)
+
     # After countering the opening move, perform regular algorithm
     else:
         # Check Defensive Moves
@@ -146,6 +205,7 @@ def aiMove(board):
 
     board[bestMove[0]][bestMove[1]] = aiToken
 
+# Game Board Helper Functions
 def isBoardCAT(board) -> bool:
     for row in board:
         for col in row:
